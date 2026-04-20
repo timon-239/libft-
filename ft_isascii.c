@@ -6,11 +6,11 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:52:37 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 12:58:45 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/20 15:47:49 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

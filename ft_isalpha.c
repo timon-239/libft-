@@ -6,11 +6,15 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:18:52 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 12:37:33 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/20 15:47:27 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_issalpha(char c)
+
+int	ft_issalpha(int c)
 {
+	int i;
+
+	i = 0;
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);

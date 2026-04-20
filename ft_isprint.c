@@ -6,11 +6,11 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:55:14 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 12:56:28 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/20 15:48:18 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
