@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:18:52 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 17:55:06 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/20 17:32:58 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/20 17:43:56 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_issalpha(int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	while (s1[i] == s2[i] && i < n - 1)
+	{
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }

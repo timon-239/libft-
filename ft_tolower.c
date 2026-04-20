@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:18:52 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 17:55:06 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/20 18:32:29 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/20 18:33:14 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_issalpha(int c)
+int	ft_tolower(int c)
 {
 	int	i;
 
 	i = 0;
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	while (ft_isalpha(c))
+	{
+		if (c >= 'A' && c <= 'Z')
+			c += 32;
+	}
+	return (c);
 }

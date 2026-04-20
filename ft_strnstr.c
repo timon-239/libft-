@@ -1,21 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
+/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:18:52 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 17:55:06 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/20 17:46:55 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/20 17:48:13 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_issalpha(int c)
+char	*strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	i;
-
-	i = 0;
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	
 }
