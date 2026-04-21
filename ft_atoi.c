@@ -9,7 +9,9 @@
 /*   Updated: 2026/04/21 12:32:12 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	isspace(char c)
+#include "libft.h"
+
+static int	isspace(char c)
 {
 	if (c == '\f' || c == '\t' || c == '\n' || c == '\v' || c == '\r'
 		|| c == ' ')
