@@ -6,7 +6,7 @@
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:46:55 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 11:36:02 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 12:32:30 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -28,6 +28,7 @@ char	*strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 }
+
 int	main(void)
 {
 	char	*a;

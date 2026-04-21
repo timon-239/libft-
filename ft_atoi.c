@@ -6,7 +6,7 @@
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:35:25 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/20 19:17:15 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 12:32:12 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	isspace(char c)
@@ -16,6 +16,7 @@ int	isspace(char c)
 		return (1);
 	return (0);
 }
+
 int	ft_atoi(const char *str)
 {
 	int	sign;
