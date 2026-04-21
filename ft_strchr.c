@@ -1,38 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 17:46:55 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 11:30:40 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/20 21:48:57 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/20 21:59:46 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
-char	*strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-	int	j;
-
-	j = 0;
-	i = 0;
-	while (i < len)
-	{
-		if (haystack[i] == needle[j])
-			return (*needle);
-		if (*needle == '\0')
-			return (NULL);
-		if (haystack[i] != needle[j])
-			return (*haystack);
-		i++;
-	}
-}
-int	main(void)
-{
-	char	*a;
-
-	a = strnstr("Timon", "im", 5);
-	printf("%s", a);
-}
