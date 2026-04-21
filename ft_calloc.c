@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 13:20:27 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 14:49:03 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/21 15:51:59 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/21 16:34:59 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t			i;
-	unsigned char	*ptr;
+	size_t	totalsize;
+	char	*ptr;
 
-	ptr = (unsigned char *)b;
-	i = 0;
-	while (i < len)
-	{
-		ptr[i] = (unsigned char)c;
-		i++;
-	}
-	return (b);
+	if (!count && size > SIZE_MAX / count)
+		return (NULL);
+	totalsize = count * size;
+	ptr = malloc(totalsize);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, totalsize);
+	return (ptr);
 }

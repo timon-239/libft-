@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 13:20:27 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 14:49:03 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/21 15:17:29 by timonreis         #+#    #+#             */
+/*   Updated: 2026/04/21 15:35:40 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t			i;
-	unsigned char	*ptr;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	ptr = (unsigned char *)b;
-	i = 0;
-	while (i < len)
+	if (!dst && !src)
+		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	if (d > s)
 	{
-		ptr[i] = (unsigned char)c;
-		i++;
+		i = len;
+		while (i--)
+			d[i] = s[i];
 	}
-	return (b);
+	else
+	{
+		i = 0;
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dst);
 }
