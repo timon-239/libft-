@@ -1,14 +1,23 @@
-
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/21 17:00:15 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/21 17:03:27 by tireis           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <string.h>
+# include <stdlib.h>
+# include <string.h>
 
-int ft_atoi(const char*str)
+int ft_atoi(const char *str)
 void ft_bzero(void *s, size_t n)
-void	*ft_calloc(size_t count, size_t size)
+void *ft_calloc(size_t count, size_t size)
 int ft_isalnum(int c)
 int ft_isalpha(int c)
 int ft_isascii(int c)
@@ -28,7 +37,5 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 char *ft_strrchr(const char *s, int c)
 int ft_tolower(int c)
 int ft_toupper(int c)
-
-
 
 #endif
