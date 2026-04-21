@@ -6,19 +6,13 @@
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:25:17 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/20 18:30:58 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:41:07 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (ft_isalpha(c))
-	{
-		if (c >= 'a' && c <= 'z')
-			c -= 32;
-	}
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
 	return (c);
 }

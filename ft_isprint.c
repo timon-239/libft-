@@ -6,13 +6,16 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:55:14 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 15:48:18 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:21:01 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 126)
+	unsigned char	a;
+
+	a = (unsigned char)c;
+	if (a >= 32 && a <= 126)
 		return (1);
 	return (0);
 }

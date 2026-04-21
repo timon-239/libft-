@@ -6,13 +6,16 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:39:06 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 15:48:02 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:20:32 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
+	unsigned char	a;
+
+	a = (unsigned char)c;
+	if (a >= '0' && a <= '9')
 		return (1);
 	return (0);
 }

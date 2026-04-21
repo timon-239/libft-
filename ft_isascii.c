@@ -6,13 +6,16 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:52:37 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 15:47:49 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:19:57 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
+	unsigned char	a;
+
+	a = (unsigned char)c;
+	if (a >= 0 && a <= 127)
 		return (1);
 	return (0);
 }

@@ -6,17 +6,17 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:40:31 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 17:01:29 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:18:14 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalnum(int c)
 {
-	int	i;
+	unsigned char	a;
 
-	i = 0;
-	if ((c >= '0' && c <= '9') || ((c >= 'A' && c <= 'Z') || (c >= 'a'
-				&& c <= 'z')))
+	a = (unsigned char)c;
+	if ((a >= '0' && a <= '9') || ((a >= 'A' && a <= 'Z') || (a >= 'a'
+				&& a <= 'z')))
 		return (1);
 	return (0);
 }

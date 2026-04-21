@@ -6,19 +6,13 @@
 /*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:32:29 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/20 18:33:14 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/21 14:39:53 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (ft_isalpha(c))
-	{
-		if (c >= 'A' && c <= 'Z')
-			c += 32;
-	}
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
 	return (c);
 }
