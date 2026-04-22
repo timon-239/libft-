@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 13:25:03 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 13:48:12 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 16:01:49 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 16:01:50 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
