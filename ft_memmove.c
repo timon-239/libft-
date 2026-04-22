@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 15:17:29 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 15:35:40 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:09:03 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:09:05 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

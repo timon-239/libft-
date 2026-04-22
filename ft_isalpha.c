@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:18:52 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/21 14:19:08 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:07:08 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:07:10 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_issalpha(int c)

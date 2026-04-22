@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 17:46:55 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 13:00:43 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:11:06 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:11:07 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*strnstr(const char *haystack, const char *needle, size_t len)

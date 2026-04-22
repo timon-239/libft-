@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:40:31 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/21 14:18:14 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:06:53 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:06:57 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalnum(int c)

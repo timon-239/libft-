@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:52:37 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/21 14:19:57 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:07:21 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:07:23 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isascii(int c)

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 18:35:25 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/21 12:32:12 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:03:38 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:04:00 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	isspace(char c)

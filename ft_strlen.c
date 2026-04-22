@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:13:45 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/20 15:49:07 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 14:10:25 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 14:10:34 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)
