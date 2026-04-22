@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: timonreis <tireis@student.42vienna.com>    +#+  +:+       +#+        */
+/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 19:01:00 by timonreis         #+#    #+#             */
-/*   Updated: 2026/04/22 10:39:41 by timonreis        ###   ########.fr       */
+/*   Created: 2026/04/22 16:00:27 by tireis            #+#    #+#             */
+/*   Updated: 2026/04/22 16:00:29 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)
