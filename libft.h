@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:00:15 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 12:07:36 by timonreis        ###   ########.fr       */
+/*   Updated: 2026/04/22 12:28:30 by timonreis        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -39,5 +39,6 @@ int ft_tolower(int c);
 int ft_toupper(int c);
 char *ft_strdup(const char *s1);
 char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
 
 #endif
