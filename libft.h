@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:12:42 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:13:08 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/23 11:25:32 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,7 @@ char *ft_strdup(const char *s1);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
+char *ft_itoa(int n);
 
 #endif
