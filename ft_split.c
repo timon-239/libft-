@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:12:16 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/23 12:42:34 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/23 16:59:06 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -60,7 +60,7 @@ char	**ft_split(char const *s, char c)
 				word_len++;
 			res[i] = ft_substr(s, 0, word_len);
 			if (!res[i])
-				return (ft_free_array(res, i - 1);
+				return (ft_free_array(res, i - 1));
 			s += word_len;
 		}
 	}

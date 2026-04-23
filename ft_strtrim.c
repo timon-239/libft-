@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:11:33 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:26:26 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/23 16:58:38 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,7 +25,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	if (start > end)
 		return (ft_strdup(s1 + end + 1));
-	while (ft_strchr(set, s1[end] && end >= 0)
+	while (ft_strchr(set, s1[end] && end >= 0))
 		end--;
 	ptr = malloc(end - start + 2);
 	if (!ptr)
@@ -42,4 +42,4 @@ int	main(void)
 
 	a = ft_strtrim("Hal,lo", ",");
 	printf("%s", a);
-}
+}*/
