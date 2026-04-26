@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:12:42 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/23 16:54:58 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/26 21:58:09 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+}
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
