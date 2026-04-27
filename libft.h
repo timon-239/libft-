@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:12:42 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/27 14:33:38 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/27 14:37:12 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ typedef struct s_list
 {
 void *content;
 struct s_list *next;
-}
+}		t_list;
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);

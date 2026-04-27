@@ -6,9 +6,10 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 13:27:47 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/27 14:07:56 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/27 14:38:21 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
