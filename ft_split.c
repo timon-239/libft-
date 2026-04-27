@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 15:12:16 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/23 16:59:06 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/27 14:42:09 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,6 +21,7 @@ static char	**ft_free_array(char **res, int i)
 	free(res);
 	return (NULL);
 }
+
 static size_t	ft_countwords(char const *s, char c)
 {
 	size_t	count;
@@ -39,6 +40,7 @@ static size_t	ft_countwords(char const *s, char c)
 	}
 	return (count);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**res;

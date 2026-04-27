@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 11:13:16 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/23 13:40:09 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/27 14:41:48 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,6 +25,7 @@ static int	numbers(int nb)
 	}
 	return (len);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*ptr;
