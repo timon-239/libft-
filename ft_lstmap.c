@@ -6,16 +6,16 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:21:07 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/27 14:58:26 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/28 12:11:51 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	n_lst;
-	t_list	n_node;
-	void	n_content;
+	t_list	*n_lst;
+	t_list	*n_node;
+	void	*n_content;
 
 	if (!lst || !f || !del)
 		return (NULL);
@@ -23,14 +23,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	while (lst)
 	{
 		n_content = f(lst->content);
-		n_node = ft_lstnew(content);
+		n_node = ft_lstnew(n_content);
 		if (!n_node)
 		{
 			del(n_node);
-			ft_lstclear(&new_lst, del);
+			ft_lstclear(&n_lst, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&new_lst, n_node);
+		ft_lstadd_back(&n_lst, n_node);
 		lst = lst->next;
 	}
 	return (n_lst);
