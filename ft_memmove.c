@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:09:03 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:09:05 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/28 13:33:16 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char str[]= "ABCDE";
+	ft_memmove(str + 1, str, 3);
+	printf("%s", str);
+}*/

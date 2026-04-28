@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:09:32 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:09:34 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/28 13:46:29 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	destlen;
 	size_t	srclen;
 
-	destlen = ft_strlen(dest);
 	srclen = ft_strlen(src);
+	destlen = 0;
+	while (destlen < size && dest[destlen])
+		destlen++;
 	i = 0;
 	if (size <= destlen)
 		return (size + srclen);
-	while (src[i] && size - 1 > (i + destlen))
+	while (src[i] && size > (i + destlen + 1))
 	{
 		dest[i + destlen] = src[i];
 		i++;
