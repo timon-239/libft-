@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 14:09:18 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:09:20 by tireis           ###   ########.fr       */
+/*   Updated: 2026/04/28 14:38:49 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s2_len;
 	char	*ptr;
 
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
 	if (!s1 || !s2)
 		return (NULL);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
 	ptr = malloc(sizeof(char) * (s1_len + s2_len + 1));
 	if (!ptr)
 		return (NULL);
