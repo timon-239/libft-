@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 15:59:57 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 15:59:58 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memset.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/22 15:59:57 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 13:41:08 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,16 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	str[] = "Hallo";
+	char	c;
+	char	*res;
+
+	c = 'a';
+	res = ft_memset(str, c, 6);
+	printf("%s", res);
+}*/

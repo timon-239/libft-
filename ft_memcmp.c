@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 14:08:30 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/28 13:57:45 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_memcmp.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/22 14:08:30 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 13:36:11 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,15 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	const char	s1[] = "HALLO";
+	const char	s2[] = "HALL";
+	int			res;
+
+	res = ft_memcmp(s1, s2, 6);
+	printf("%d", res);
+}*/

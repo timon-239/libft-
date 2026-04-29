@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 14:11:21 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/22 14:11:22 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strchr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/22 14:11:21 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 13:52:50 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,16 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	const char	str[] = "Over";
+	char		c;
+	char		*res;
+
+	c = 'r';
+	res = ft_strchr(str, c);
+	printf("%s", res);
+}*/

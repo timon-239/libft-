@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 14:11:45 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/28 14:35:02 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_substr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/22 14:11:45 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 14:13:53 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	subs[len] = '\0';
 	return (subs);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	*s = "0123456789";
+	char	*r;
+
+	r = ft_substr(s, 2, 3);
+	printf("res: %s\n", r); // "234"
+	free(r);
+
+	r = ft_substr(s, 15, 5);
+	printf("empty: [%s]\n", r); // ""
+	free(r);
+
+	return (0);
+}*/

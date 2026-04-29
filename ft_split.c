@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 15:12:16 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/28 15:48:06 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_split.c                                        :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/22 15:12:16 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 13:43:28 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -69,15 +69,23 @@ char	**ft_split(char const *s, char c)
 	res[i] = NULL;
 	return (res);
 }
+
 /*#include <stdio.h>
+
 int	main(int ac, char **av)
 {
-	if (ac < 2)
-		return (0);
+	char	**res;
+	int		i;
 
-	else
-		for(int i = 0; i < ft_strlen(av[]))
-		{
-
-		}
+	i = 0;
+	res = ft_split("A-B-C", '-');
+	if (!res)
+		return (1);
+	while (res[i])
+	{
+		printf("%s\n", res[i]);
+		free(res[i++]);
+	}
+	free(res);
+	return (0);
 }*/
