@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tireis <tireis@student.42vienna.com>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 11:38:35 by tireis            #+#    #+#             */
-/*   Updated: 2026/04/27 11:41:46 by tireis           ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_lstlast.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/04/27 11:38:35 by tireis           #+#    #+#              */
+/*   Updated: 2026/04/29 14:30:55 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,23 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	t_list	*l;
+	t_list	*last;
+
+	l = ft_lstnew("A");
+	l->next = ft_lstnew("B");
+	l->next->next = ft_lstnew("C");
+
+	last = ft_lstlast(l);
+
+	if (last)
+		printf("last: %s\n", (char *)last->content);
+	else
+		printf("empty\n");
+	return (0);
+}*/
