@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/28 19:23:45 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/28 19:25:18 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/29 13:04:16 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	res = 0;
 	i = 0;
-	while (isspace(str[i]))
-		i++;
+	while ((isspace(str[i])) && (i++, 1))
+		;
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -44,3 +44,10 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	int res = ft_atoi("a");
+	printf("%d", res);
+}/*
