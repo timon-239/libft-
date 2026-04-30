@@ -6,11 +6,9 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/22 14:12:05 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 14:45:38 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/30 17:26:55 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

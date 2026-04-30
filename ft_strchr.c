@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/22 14:11:21 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 13:52:50 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/30 17:23:30 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
+	size_t	i;
 	char	target;
 
 	target = (char)c;

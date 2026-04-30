@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/23 14:46:30 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 13:58:09 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/30 17:24:16 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int	i;
+	size_t	i;
 
 	if (!s || !f)
 		return ;
