@@ -20,10 +20,6 @@ Compilation
 
 The project includes a Makefile that compiles all source files into a libft.a static library.
 
-To compile the mandatory and bonus functions:
-
-Bash
-make bonus
 To remove object files:
 
 Bash
@@ -43,7 +39,7 @@ C
 Compile your program with the library:
 
 Bash
-gcc -Wall -Wextra -Werror main.c -L. -lft -o my_program
+cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 Resources
 
 Documentation & References
@@ -64,6 +60,4 @@ I used Gemini (AI) as an adaptive learning collaborator during this project. Her
 
 Logic Visualization: Used AI to generate analogies (like the "Scavenger Hunt" for Linked Lists) to better understand pointer arithmetic and struct navigation.
 
-Debugging Peer: When facing Segmentation Faults in ft_lstmap and ft_lstclear, I used AI to explain the "Dangling Pointer" problem and the necessity of temporary variables.
 
-Conceptual Guidance: AI helped clarify the difference between single (*) and double pointers (**) when modifying the head of a list.
