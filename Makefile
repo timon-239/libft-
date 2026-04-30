@@ -6,13 +6,13 @@
 #    By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+          #
 #                                                +#+#+#+#+#+   +#+             #
 #    Created: 2026/04/22 14:13:18 by tireis           #+#    #+#               #
-#    Updated: 2026/04/30 19:20:37 by tireis          ###   ########.fr         #
+#    Updated: 2026/04/30 19:35:04 by tireis          ###   ########.fr         #
 #                                                                              #
 # **************************************************************************** #
 
 NAME        = libft.a
 CC          = cc
-CFLAGS      = -Wall -Wextra -Werror -g -MMD -MP
+CFLAGS      = -Wall -Wextra -Werror -MMD -MP
 HEADER      = libft.h
 
 SRCS        =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
