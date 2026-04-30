@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/22 15:12:16 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 13:43:28 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/30 14:26:17 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -44,7 +44,7 @@ static size_t	ft_countwords(char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
-	int		i;
+	size_t	i;
 	size_t	word_len;
 
 	i = 0;

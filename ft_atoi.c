@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/28 19:23:45 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 17:15:24 by tireis          ###   ########.fr        */
+/*   Updated: 2026/04/30 14:48:08 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static int	isspace(char c)
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	res;
-	int	i;
+	int		sign;
+	int		res;
+	size_t	i;
 
 	sign = 1;
 	res = 0;
@@ -49,6 +49,8 @@ int	ft_atoi(const char *str)
 
 int	main(void)
 {
-	int res = ft_atoi("a");
+	int	res;
+
+	res = ft_atoi("9999999999999");
 	printf("%d", res);
 }*/
