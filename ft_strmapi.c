@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/23 14:41:56 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/30 17:25:30 by tireis          ###   ########.fr        */
+/*   Updated: 2026/05/01 15:20:53 by tireis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	while (s[i])
 	{
-		str[i] = f(i, s[i]);
+		str[i] = f((unsigned int)i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
