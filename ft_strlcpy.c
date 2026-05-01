@@ -6,7 +6,7 @@
 /*   By: tireis <tireis@student.42vienna.com>      #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/04/22 14:09:58 by tireis           #+#    #+#              */
-/*   Updated: 2026/04/29 14:03:19 by tireis          ###   ########.fr        */
+/*   Updated: 2026/05/01 16:16:39 by tireis          ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		len++;
 	if (size == 0)
 		return (len);
-	while (src[i] && i < size - 1)
+	while (src[i] && i < (size - 1))
 	{
 		dest[i] = src[i];
 		i++;
