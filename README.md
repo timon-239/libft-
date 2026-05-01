@@ -44,8 +44,6 @@ Resources
 
 Documentation & References
 
-The C Programming Language (K&R): The "Bible" of C for syntax and standard library logic.
-
 Linux Man Pages: Used extensively to verify the exact behavior and edge cases of original libc functions.
 
 Peer Collaboration
