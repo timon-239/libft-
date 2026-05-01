@@ -1,7 +1,8 @@
 This project has been created as part of the 42 curriculum by tireis.
 
-Description
-The Libft project is the first milestone of the 42 curriculum. The goal is to recreate a set of standard C library functions, along with additional utility functions that will be used in future 42 projects.
+## Description
+
+The Libft project is the first milestone of the 42 curriculum. The goal is to recreate a set of standard C library functions, along with additional utility functions that willbe used in future 42 projects.
 
 By building this library from scratch, I gained a deep understanding of:
 
@@ -15,12 +16,11 @@ Managing linked lists using custom struct definitions.
 
 This library acts as a personal toolkit, which I will continue to expand throughout the program.
 
-Instructions
-Compilation
+## Compilation
 
 The project includes a Makefile that compiles all source files into a libft.a static library.
 
-To remove object files:
+## To remove object files:
 
 Bash
 make clean
@@ -42,7 +42,7 @@ Bash
 cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 Resources
 
-Documentation & References
+## Documentation & References
 
 Linux Man Pages: Used extensively to verify the exact behavior and edge cases of original libc functions.
 
